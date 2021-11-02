@@ -17,8 +17,7 @@
     "mainnet": "truffle migrate --network main --reset",
     "kovan": "truffle migrate --network kovan --reset",
     "ropsten": "truffle migrate --network ropsten --reset",
-    "verify-ropsten-1": "truffle run verify SpiritOrbPetsv1 --network ropsten",
-    "verify-ropsten-2": "truffle run verify MediatorSOPv1 --network ropsten",
+    "verify-ropsten": "truffle run verify SpiritOrbPetsv1 MediatorSOPv1 --network ropsten",
     "verify-main": "truffle run verify CivInvestment --network main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
