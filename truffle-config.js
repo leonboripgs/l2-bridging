@@ -26,7 +26,7 @@ module.exports = {
     },
     mumbai: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, 
-        `https://rpc-mumbai.maticvigil.com`),
+        `wss://matic-mumbai--ws.datahub.figment.io/apikey/48732d575601789a08d9cdae463aa767`),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
