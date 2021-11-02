@@ -48,6 +48,7 @@ contract MediatorSOPv1 is IERC721Receiver, Ownable {
         (uint8 level, bool active) = SOPv1.getPetInfo(_tokenId);
         (uint64 cdPlay, uint64 cdFeed, uint64 cdClean, uint64 cdTrain, uint64 cdDaycare) = SOPv1.getPetCooldowns(_tokenId);
 
+        SOPv1.approve(address(this), _tokenId);
         SOPv1.safeTransferFrom(_sender, address(this), _tokenId);
         petIds[count] = _tokenId;
         

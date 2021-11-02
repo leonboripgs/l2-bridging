@@ -9,8 +9,8 @@ import "./interfaces/ISpiritOrbPetsv0.sol";
 contract SpiritOrbPetsv1 is ERC721Enumerable, Ownable {
 
     string _baseTokenURI;
-    uint256 private _price = 0.07 ether;
-    bool public _paused = true;
+    uint256 private _price = 0.01 ether;
+    bool public _paused = false;
     ISpiritOrbPetsv0 public SOPv0;
 
     // Contracts allowed to change pet variables
