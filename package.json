@@ -9,14 +9,16 @@
     "fs": "^0.0.1-security",
     "ganache-cli": "^6.12.2",
     "truffle": "^5.4.10",
-    "truffle-assertions": "^0.9.2"
+    "truffle-assertions": "^0.9.2",
+    "truffle-plugin-verify": "^0.5.16"
   },
   "scripts": {
     "compile": "truffle compile",
     "mainnet": "truffle migrate --network main --reset",
     "kovan": "truffle migrate --network kovan --reset",
     "ropsten": "truffle migrate --network ropsten --reset",
-    "verify-ropsten": "truffle run verify CivInvestment --network ropsten",
+    "verify-ropsten-1": "truffle run verify SpiritOrbPetsv1 --network ropsten",
+    "verify-ropsten-2": "truffle run verify MediatorSOPv1 --network ropsten",
     "verify-main": "truffle run verify CivInvestment --network main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
