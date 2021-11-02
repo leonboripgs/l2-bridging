@@ -26,7 +26,7 @@ module.exports = {
     },
     mumbai: {
       provider: () => new HDWalletProvider(process.env.MNEMONIC, 
-      `https://rpc-mumbai.matic.today`),
+        `https://matic-mumbai--ws.datahub.figment.io/apikey/${process.env.DATAHUB_POLYGON_API_KEY}`),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
