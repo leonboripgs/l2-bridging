@@ -56,6 +56,7 @@ module.exports = {
     'truffle-plugin-verify'
   ],
   api_keys: {
-    etherscan: process.env.ETHERSCAN_API
+    etherscan: process.env.ETHERSCAN_API,
+    polygonscan: process.env.POLYGONSCAN_API,
   }
 }
