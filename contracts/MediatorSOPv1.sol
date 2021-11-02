@@ -40,7 +40,6 @@ contract MediatorSOPv1 is IERC721Receiver, Ownable {
 
     function startBridgeToL2(uint16 _tokenId) external {
         require(msg.sender == SOPv1.ownerOf(_tokenId), "You don't own this token");
-        SOPv1.approve(address(this), _tokenId);
         _startBridgeToL2(msg.sender, _tokenId);
     }
 
